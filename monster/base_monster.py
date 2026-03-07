@@ -9,11 +9,10 @@ class Stats:
         self.hp = hp
 
 class BaseMonster:
-    def __init__(self,stats:Stats,monster_type):
+    def __init__(self,stats:Stats,monster_type,monster_moves):
         self.stats = stats
         self.type = type
     
-    def move(target, monster_move):
-        e
-
+    def use_move(target, monster_move):
+        monster_move.use()
         
