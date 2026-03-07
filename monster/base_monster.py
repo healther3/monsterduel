@@ -12,7 +12,9 @@ class BaseMonster:
     def __init__(self,stats:Stats,monster_type,monster_moves):
         self.stats = stats
         self.type = type
+        self.monster_moves = monster_moves
+        self.monster_type = monster_type
     
-    def use_move(target, monster_move):
-        monster_move.use()
+    def use_move(self, target, move_idx):
+        self.monster_moves[move_idx].use()
         
