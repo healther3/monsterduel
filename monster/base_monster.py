@@ -17,4 +17,3 @@ class BaseMonster:
     
     def use_move(self, target, move_idx):
         self.monster_moves[move_idx].use()
-        
